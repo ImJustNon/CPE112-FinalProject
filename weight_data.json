@@ -1,0 +1,4527 @@
+{
+    "vertices": [
+        "กทม",
+        "กระบี่",
+        "กาญจนบุรี",
+        "กาฬสินธุ์",
+        "กำแพงเพชร",
+        "ขอนแก่น",
+        "จันทบุรี",
+        "ฉะเชิงเทรา",
+        "ชลบุรี",
+        "ชัยนาท",
+        "ชัยภูมิ",
+        "ชุมพร",
+        "เชียงราย",
+        "เชียงใหม่",
+        "ตรัง",
+        "ตราด",
+        "ตาก",
+        "นครนายก",
+        "นครปฐม",
+        "นครพนม",
+        "นครราชสีมา",
+        "นครศรีธรรมราช",
+        "นครสวรรค์",
+        "นนทบุรี",
+        "นราธิวาส",
+        "น่าน",
+        "บึงกาฬ",
+        "บุรีรัมย์",
+        "ปทุมธานี",
+        "ประจวบคีรีขันธ์",
+        "ปราจีนบุรี",
+        "ปัตตานี",
+        "พระนครศรีอยุธยา",
+        "พะเยา",
+        "พังงา",
+        "พัทลุง",
+        "พิจิตร",
+        "พิษณุโลก",
+        "เพชรบุรี",
+        "เพชรบูรณ์",
+        "แพร่",
+        "ภูเก็ต",
+        "มหาสารคาม",
+        "มุกดาหาร",
+        "แม่ฮ่องสอน",
+        "ยโสธร",
+        "ยะลา",
+        "ร้อยเอ็ด",
+        "ระนอง",
+        "ระยอง",
+        "ราชบุรี",
+        "ลพบุรี",
+        "ลำปาง",
+        "ลำพูน",
+        "เลย",
+        "ศรีสะเกษ",
+        "สกลนคร",
+        "สงขลา",
+        "สตูล",
+        "สมุทรปราการ",
+        "สมุทรสงคราม",
+        "สมุทรสาคร",
+        "สระแก้ว",
+        "สระบุรี",
+        "สิงห์บุรี",
+        "สุโขทัย",
+        "สุพรรณบุรี",
+        "สุราษฎร์ธานี",
+        "สุรินทร์",
+        "หนองคาย",
+        "หนองบัวลำภู",
+        "อ่างทอง",
+        "อำนาจเจริญ",
+        "อุดรธานี",
+        "อุตรดิตถ์",
+        "อุทัยธานี",
+        "อุบลราชธานี"
+    ],
+    "edges": [
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "กทม",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 670,
+                "time": 90,
+                "price": 1626.8
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "สมุทรปราการ",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 650,
+                "time": 85,
+                "price": 1734.6
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "เชียงใหม่",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 1360,
+                "time": 120,
+                "price": 3324.47
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 168,
+                "time": 180,
+                "price": 345
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "สมุทรสาคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 742,
+                "time": 660,
+                "price": 675
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "สงขลา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 303,
+                "time": 270,
+                "price": 450
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "สตูล",
+            "transport": "บขส",
+            "weights": {
+                "distance": 266,
+                "time": 240,
+                "price": 1090
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 801,
+                "time": 631,
+                "price": 715
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 889,
+                "time": 720,
+                "price": 996
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 327,
+                "time": 300,
+                "price": 844
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "นครราชสีมา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1057,
+                "time": 810,
+                "price": 1518
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "นครศรีธรรมราช",
+            "transport": "บขส",
+            "weights": {
+                "distance": 153,
+                "time": 190,
+                "price": 320
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "พังงา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 120,
+                "time": 90,
+                "price": 400
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "เพชรบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 650,
+                "time": 500,
+                "price": 844
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "ภูเก็ต",
+            "transport": "บขส",
+            "weights": {
+                "distance": 163,
+                "time": 180,
+                "price": 320
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 495,
+                "time": 480,
+                "price": 844
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "กระบี่",
+            "destination": "ราชบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 714,
+                "time": 588,
+                "price": 844
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "กทม",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 690,
+                "time": 90,
+                "price": 1735.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "สมุทรปราการ",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 680,
+                "time": 85,
+                "price": 2000.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "เชียงใหม่",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 1192,
+                "time": 110,
+                "price": 3516.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "ระยอง",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 589,
+                "time": 100,
+                "price": 5375
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 150,
+                "time": 55,
+                "price": 3385
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "สงขลา",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 460,
+                "time": 60,
+                "price": 2635
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 846,
+                "time": 699,
+                "price": 715
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "เชียงใหม่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1518,
+                "time": 1206,
+                "price": 3255
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "เชียงราย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1620,
+                "time": 1339,
+                "price": 2646
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 620,
+                "time": 777,
+                "price": 966
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 385,
+                "time": 348,
+                "price": 390
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "ขอนแก่น",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1285,
+                "time": 1260,
+                "price": 1258
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "กระบี่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 191,
+                "time": 196,
+                "price": 320
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "ลำปาง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1430,
+                "time": 1360,
+                "price": 2885
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "นครศรีธรรมราช",
+            "transport": "บขส",
+            "weights": {
+                "distance": 299,
+                "time": 302,
+                "price": 320
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "นราธิวาส",
+            "transport": "บขส",
+            "weights": {
+                "distance": 654,
+                "time": 577,
+                "price": 635
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "หนองคาย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1448,
+                "time": 1225,
+                "price": 1415
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "พังงา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 122,
+                "time": 100,
+                "price": 100
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "พะเยา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1500,
+                "time": 1435,
+                "price": 2283
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "เพชรบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 713,
+                "time": 600,
+                "price": 715
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 620,
+                "time": 526,
+                "price": 715
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "ระนอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 294,
+                "time": 306,
+                "price": 300
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "ราชบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 779,
+                "time": 669,
+                "price": 715
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "สมุทรปราการ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 852,
+                "time": 780,
+                "price": 966
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "สมุทรสงคราม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 805,
+                "time": 615,
+                "price": 715
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "สงขลา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 274,
+                "time": 450,
+                "price": 396
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 234,
+                "time": 232,
+                "price": 421
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "ตรัง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 281,
+                "time": 284,
+                "price": 279
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "ภูเก็ต",
+            "destination": "อุดรธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1399,
+                "time": 1176,
+                "price": 1367
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 766,
+                "time": 636,
+                "price": 866
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 869,
+                "time": 910,
+                "price": 966
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 316,
+                "time": 243,
+                "price": 370
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "เพชรบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 630,
+                "time": 540,
+                "price": 693
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "ภูเก็ต",
+            "transport": "บขส",
+            "weights": {
+                "distance": 120,
+                "time": 72,
+                "price": 100
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 475,
+                "time": 420,
+                "price": 693
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "ระนอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 194,
+                "time": 185,
+                "price": 125
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "ราชบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 705,
+                "time": 592,
+                "price": 899
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "สมุทรปราการ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 769,
+                "time": 630,
+                "price": 966
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "สมุทรสาคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 722,
+                "time": 540,
+                "price": 693
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 161,
+                "time": 159,
+                "price": 150
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "พังงา",
+            "destination": "กระบี่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 120,
+                "time": 130,
+                "price": 357
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "กทม",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 760,
+                "time": 85,
+                "price": 1855.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "สมุทรปราการ",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 756,
+                "time": 90,
+                "price": 2060.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ภูเก็ต",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 258,
+                "time": 55,
+                "price": 2585.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "อุดรธานี",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 1185,
+                "time": 130,
+                "price": 3250
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 990,
+                "time": 813,
+                "price": 785
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "บึงกาฬ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1751,
+                "time": 1394,
+                "price": 2162
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "เชียงราย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1782,
+                "time": 1402,
+                "price": 2220
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1000,
+                "time": 840,
+                "price": 1425
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ขอนแก่น",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1436,
+                "time": 1122,
+                "price": 1786
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "กระบี่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 296,
+                "time": 330,
+                "price": 450
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "นครราชสีมา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1217,
+                "time": 994,
+                "price": 1554
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "นครสวรรค์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1193,
+                "time": 967,
+                "price": 1529
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "นครศรีธรรมราช",
+            "transport": "บขส",
+            "weights": {
+                "distance": 188,
+                "time": 159,
+                "price": 170
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "หนองคาย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1616,
+                "time": 1285,
+                "price": 2069
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "พัทลุง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 108,
+                "time": 118,
+                "price": 80
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "พะเยา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1689,
+                "time": 1316,
+                "price": 2106
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "พิษณุโลก",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1367,
+                "time": 1056,
+                "price": 1691
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "แพร่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1519,
+                "time": 1228,
+                "price": 1918
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ภูเก็ต",
+            "transport": "บขส",
+            "weights": {
+                "distance": 400,
+                "time": 420,
+                "price": 396
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 679,
+                "time": 600,
+                "price": 979
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ราชบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 901,
+                "time": 840,
+                "price": 850
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ระยอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1025,
+                "time": 810,
+                "price": 1518
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "สมุทรสาคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 927,
+                "time": 883,
+                "price": 979
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "สตูล",
+            "transport": "บขส",
+            "weights": {
+                "distance": 125,
+                "time": 90,
+                "price": 300
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 320,
+                "time": 276,
+                "price": 310
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ตรัง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 160,
+                "time": 135,
+                "price": 254
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "อุดรธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1567,
+                "time": 1238,
+                "price": 1929
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "อุตรดิตถ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1475,
+                "time": 1130,
+                "price": 1823
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ปัตตานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 107,
+                "time": 120,
+                "price": 157
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สงขลา",
+            "destination": "ยะลา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 140,
+                "time": 120,
+                "price": 380
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "กทม",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 552,
+                "time": 75,
+                "price": 1510.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "สมุทรปราการ",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 533,
+                "time": 75,
+                "price": 2050.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "เชียงใหม่",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 1066,
+                "time": 110,
+                "price": 2910.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "ภูเก็ต",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 144,
+                "time": 60,
+                "price": 4810.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "ระยอง",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 440,
+                "time": 70,
+                "price": 5900.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "กระบี่",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 100,
+                "time": 50,
+                "price": 4735.0
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 718,
+                "time": 545,
+                "price": 558
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 746,
+                "time": 710,
+                "price": 947
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 180,
+                "time": 165,
+                "price": 450
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "ขอนแก่น",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1092,
+                "time": 883,
+                "price": 1400
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "กระบี่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 274,
+                "time": 180,
+                "price": 375
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "นครสวรรค์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 867,
+                "time": 905,
+                "price": 1379
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "นครศรีธรรมราช",
+            "transport": "บขส",
+            "weights": {
+                "distance": 139,
+                "time": 270,
+                "price": 310
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "หนองคาย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1254,
+                "time": 1030,
+                "price": 1610
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "นนทบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 653,
+                "time": 465,
+                "price": 643
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "พังงา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 161,
+                "time": 161,
+                "price": 150
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "เพชรบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 509,
+                "time": 375,
+                "price": 717
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "พิษณุโลก",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1008,
+                "time": 1045,
+                "price": 1559
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "ภูเก็ต",
+            "transport": "บขส",
+            "weights": {
+                "distance": 241,
+                "time": 270,
+                "price": 408
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 354,
+                "time": 289,
+                "price": 684
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "สมุทรปราการ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 647,
+                "time": 570,
+                "price": 630
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "สงขลา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 324,
+                "time": 390,
+                "price": 533
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "ตรัง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 211,
+                "time": 180,
+                "price": 385
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "อุดรธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1205,
+                "time": 1130,
+                "price": 1332
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "ยะลา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 350,
+                "time": 450,
+                "price": 590
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "นราธิวาส",
+            "transport": "บขส",
+            "weights": {
+                "distance": 500,
+                "time": 510,
+                "price": 690
+            }
+        },
+        {
+            "zone": "ใต้",
+            "source": "สุราษฎร์ธานี",
+            "destination": "สมุทรสาคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 609,
+                "time": 600,
+                "price": 684
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "เชียงใหม่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 861,
+                "time": 701,
+                "price": 594
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "อุดรธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 761,
+                "time": 585,
+                "price": 473
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ขอนแก่น",
+            "transport": "บขส",
+            "weights": {
+                "distance": 765,
+                "time": 593,
+                "price": 380
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นครราชสีมา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 345,
+                "time": 284,
+                "price": 232
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "อุบลราชธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 725,
+                "time": 587,
+                "price": 504
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สระบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 97.5,
+                "time": 78,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 154,
+                "time": 117,
+                "price": 95
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สมุทรปราการ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 34.8,
+                "time": 40,
+                "price": 200
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "กาญจนบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 186,
+                "time": 155,
+                "price": 110
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "พระนครศรีอยุธยา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 98.1,
+                "time": 88,
+                "price": 88
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สมุทรสาคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 45.4,
+                "time": 42,
+                "price": 80
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ระยอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 200,
+                "time": 159,
+                "price": 151
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ปทุมธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 38.9,
+                "time": 55,
+                "price": 118
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นครปฐม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 56.8,
+                "time": 52,
+                "price": 90
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ฉะเชิงเทรา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 150,
+                "time": 138,
+                "price": 130
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "เพชรบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 171,
+                "time": 144,
+                "price": 169
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 679,
+                "time": 517,
+                "price": 218
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 823,
+                "time": 723,
+                "price": 558
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "พังงา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 804,
+                "time": 650,
+                "price": 650
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "กระบี่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 860,
+                "time": 672,
+                "price": 715
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สงขลา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 988,
+                "time": 772,
+                "price": 749
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "อำนาจเจริญ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 624,
+                "time": 523,
+                "price": 486
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "อ่างทอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 118,
+                "time": 108,
+                "price": 128
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "บึงกาฬ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 729,
+                "time": 623,
+                "price": 565
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "บุรีรัมย์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 447,
+                "time": 352,
+                "price": 333
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ชัยนาท",
+            "transport": "บขส",
+            "weights": {
+                "distance": 193,
+                "time": 178,
+                "price": 200
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ชัยภูมิ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 405,
+                "time": 336,
+                "price": 265
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "จันทบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 250,
+                "time": 205,
+                "price": 218
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "เชียงราย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 838,
+                "time": 699,
+                "price": 650
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 548,
+                "time": 416,
+                "price": 400
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "กาฬสินธุ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 568,
+                "time": 457,
+                "price": 508
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "กำแพงเพชร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 501,
+                "time": 423,
+                "price": 313
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ลำปาง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 639,
+                "time": 491,
+                "price": 432
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ลำพูน",
+            "transport": "บขส",
+            "weights": {
+                "distance": 652,
+                "time": 512,
+                "price": 594
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "เลย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 600,
+                "time": 517,
+                "price": 550
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ลพบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 180,
+                "time": 148,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "แม่ฮ่องสอน",
+            "transport": "บขส",
+            "weights": {
+                "distance": 801,
+                "time": 739,
+                "price": 758
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "มหาสารคาม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 532,
+                "time": 435,
+                "price": 349
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "มุกดาหาร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 659,
+                "time": 529,
+                "price": 535
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นครนายก",
+            "transport": "บขส",
+            "weights": {
+                "distance": 98.6,
+                "time": 91,
+                "price": 120
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นครพนม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 731,
+                "time": 616,
+                "price": 576
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นครสวรรค์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 226,
+                "time": 181,
+                "price": 360
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นครศรีธรรมราช",
+            "transport": "บขส",
+            "weights": {
+                "distance": 884,
+                "time": 682,
+                "price": 617
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "น่าน",
+            "transport": "บขส",
+            "weights": {
+                "distance": 744,
+                "time": 612,
+                "price": 547
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นราธิวาส",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1186,
+                "time": 930,
+                "price": 1184
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "หนองบัวลำภู",
+            "transport": "บขส",
+            "weights": {
+                "distance": 637,
+                "time": 536,
+                "price": 527
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "หนองคาย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 711,
+                "time": 600,
+                "price": 515
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ปัตตานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1086,
+                "time": 874,
+                "price": 1085
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "พัทลุง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 890,
+                "time": 679,
+                "price": 706
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "พะเยา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 766,
+                "time": 620,
+                "price": 576
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "เพชรบูรณ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 410,
+                "time": 341,
+                "price": 380
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "พิจิตร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 328,
+                "time": 257,
+                "price": 257
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "พิษณุโลก",
+            "transport": "บขส",
+            "weights": {
+                "distance": 412,
+                "time": 321,
+                "price": 320
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "แพร่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 635,
+                "time": 491,
+                "price": 468
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ภูเก็ต",
+            "transport": "บขส",
+            "weights": {
+                "distance": 875,
+                "time": 715,
+                "price": 715
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ปราจีนบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 274,
+                "time": 252,
+                "price": 140
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ระนอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 619,
+                "time": 483,
+                "price": 491
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ราชบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 101,
+                "time": 87,
+                "price": 120
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ร้อยเอ็ด",
+            "transport": "บขส",
+            "weights": {
+                "distance": 542,
+                "time": 437,
+                "price": 380
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สระแก้ว",
+            "transport": "บขส",
+            "weights": {
+                "distance": 258,
+                "time": 217,
+                "price": 220
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สกลนคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 785,
+                "time": 686,
+                "price": 558
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สตูล",
+            "transport": "บขส",
+            "weights": {
+                "distance": 966,
+                "time": 789,
+                "price": 787
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สิงห์บุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 150,
+                "time": 138,
+                "price": 135
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ศรีสะเกษ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 534,
+                "time": 437,
+                "price": 418
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สุโขทัย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 476,
+                "time": 369,
+                "price": 376
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สุพรรณบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 120,
+                "time": 100,
+                "price": 100
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สุรินทร์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 494,
+                "time": 404,
+                "price": 367
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ตาก",
+            "transport": "บขส",
+            "weights": {
+                "distance": 485,
+                "time": 378,
+                "price": 362
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ตรัง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 863,
+                "time": 692,
+                "price": 711
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ตราด",
+            "transport": "บขส",
+            "weights": {
+                "distance": 346,
+                "time": 283,
+                "price": 279
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "อุทัยธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 243,
+                "time": 224,
+                "price": 317
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "อุตรดิตถ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 485,
+                "time": 363,
+                "price": 229
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ยะลา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 1188,
+                "time": 962,
+                "price": 1298
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ยโสธร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 703,
+                "time": 568,
+                "price": 443
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นราธิวาส",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 831,
+                "time": 90,
+                "price": 2710
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สงขลา",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 776,
+                "time": 85,
+                "price": 1640
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ตรัง",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 720,
+                "time": 85,
+                "price": 1850
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "กระบี่",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 670,
+                "time": 85,
+                "price": 1400
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นครศรีธรรมราช",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 602,
+                "time": 80,
+                "price": 1690
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ภูเก็ต",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 692,
+                "time": 85,
+                "price": 1630
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 555,
+                "time": 70,
+                "price": 1545
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ระนอง",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 510,
+                "time": 80,
+                "price": 1960
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ชุมพร",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 381,
+                "time": 65,
+                "price": 1595
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "บุรีรัมย์",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 320,
+                "time": 60,
+                "price": 2170
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "อุบลราชธานี",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 482,
+                "time": 60,
+                "price": 1535
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ร้อยเอ็ด",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 424,
+                "time": 65,
+                "price": 1990
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ขอนแก่น",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 368,
+                "time": 65,
+                "price": 1380
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "สกลนคร",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 524,
+                "time": 75,
+                "price": 1545
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "นครพนม",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 579,
+                "time": 80,
+                "price": 1440
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "อุดรธานี",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 451,
+                "time": 70,
+                "price": 1400
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "เลย",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 410,
+                "time": 70,
+                "price": 1895
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "พิษณุโลก",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 320,
+                "time": 65,
+                "price": 1230
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "ลำปาง",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 499,
+                "time": 70,
+                "price": 2005
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "น่าน",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 545,
+                "time": 75,
+                "price": 1455
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "เชียงใหม่",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 568,
+                "time": 75,
+                "price": 1595
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "กทม",
+            "destination": "เชียงราย",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 676,
+                "time": 85,
+                "price": 1645
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 116,
+                "time": 94,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "อุดรธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 460,
+                "time": 383,
+                "price": 473
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ขอนแก่น",
+            "transport": "บขส",
+            "weights": {
+                "distance": 342,
+                "time": 282,
+                "price": 433
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "นครราชสีมา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 150,
+                "time": 118,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "อุบลราชธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 496,
+                "time": 399,
+                "price": 524
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "พระนครศรีอยุธยา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 42.2,
+                "time": 35,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ปทุมธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 80.6,
+                "time": 74,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "สมุทรปราการ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 131,
+                "time": 103,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 274,
+                "time": 253,
+                "price": 824
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "อำนาจเจริญ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 499,
+                "time": 460,
+                "price": 432
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "บึงกาฬ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 656,
+                "time": 605,
+                "price": 650
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "บุรีรัมย์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 283,
+                "time": 226,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ชัยนาท",
+            "transport": "บขส",
+            "weights": {
+                "distance": 133,
+                "time": 123,
+                "price": 150
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ชัยภูมิ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 257,
+                "time": 237,
+                "price": 433
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 563,
+                "time": 445,
+                "price": 824
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "กาฬสินธุ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 411,
+                "time": 330,
+                "price": 550
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "เลย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 430,
+                "time": 397,
+                "price": 550
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ลพบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 64.6,
+                "time": 60,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "มหาสารคาม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 366,
+                "time": 338,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "มุกดาหาร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 551,
+                "time": 509,
+                "price": 558
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "นครพนม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 637,
+                "time": 588,
+                "price": 576
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "นครศรีธรรมราช",
+            "transport": "บขส",
+            "weights": {
+                "distance": 885,
+                "time": 817,
+                "price": 824
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "น่าน",
+            "transport": "บขส",
+            "weights": {
+                "distance": 600,
+                "time": 554,
+                "price": 260
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "หนองบัวลำภู",
+            "transport": "บขส",
+            "weights": {
+                "distance": 413,
+                "time": 361,
+                "price": 550
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "หนองคาย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 514,
+                "time": 429,
+                "price": 515
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "แพร่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 485,
+                "time": 413,
+                "price": 260
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ปราจีนบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 111,
+                "time": 102,
+                "price": 150
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ร้อยเอ็ด",
+            "transport": "บขส",
+            "weights": {
+                "distance": 401,
+                "time": 370,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "สกลนคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 541,
+                "time": 499,
+                "price": 589
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ศรีสะเกษ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 437,
+                "time": 351,
+                "price": 418
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "สุรินทร์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 323,
+                "time": 262,
+                "price": 454
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สระบุรี",
+            "destination": "ยโสธร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 426,
+                "time": 393,
+                "price": 460
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 80.7,
+                "time": 73,
+                "price": 470
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "อุดรธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 522,
+                "time": 439,
+                "price": 473
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ขอนแก่น",
+            "transport": "บขส",
+            "weights": {
+                "distance": 404,
+                "time": 338,
+                "price": 433
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "นครราชสีมา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 213,
+                "time": 179,
+                "price": 250
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "อุบลราชธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 558,
+                "time": 455,
+                "price": 524
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "เชียงใหม่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 772,
+                "time": 654,
+                "price": 594
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 179,
+                "time": 165,
+                "price": 300
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "สมุทรปราการ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 105,
+                "time": 89,
+                "price": 470
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "สระบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 57.4,
+                "time": 53,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "อำนาจเจริญ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 555,
+                "time": 512,
+                "price": 517
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "บึงกาฬ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 712,
+                "time": 657,
+                "price": 650
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "บุรีรัมย์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 345,
+                "time": 282,
+                "price": 333
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ชัยนาท",
+            "transport": "บขส",
+            "weights": {
+                "distance": 120,
+                "time": 111,
+                "price": 571
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ชัยภูมิ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 313,
+                "time": 289,
+                "price": 265
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "เชียงราย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 719,
+                "time": 664,
+                "price": 650
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "กาฬสินธุ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 467,
+                "time": 390,
+                "price": 550
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "กำแพงเพชร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 277,
+                "time": 212,
+                "price": 313
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ลำปาง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 539,
+                "time": 426,
+                "price": 432
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ลำพูน",
+            "transport": "บขส",
+            "weights": {
+                "distance": 580,
+                "time": 447,
+                "price": 594
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "เลย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 485,
+                "time": 448,
+                "price": 550
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ลพบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 104,
+                "time": 96,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "มหาสารคาม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 421,
+                "time": 389,
+                "price": 380
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "มุกดาหาร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 606,
+                "time": 559,
+                "price": 513
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "นครพนม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 693,
+                "time": 640,
+                "price": 576
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "นครสวรรค์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 176,
+                "time": 141,
+                "price": 693
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "หนองบัวลำภู",
+            "transport": "บขส",
+            "weights": {
+                "distance": 468,
+                "time": 421,
+                "price": 550
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "หนองคาย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 576,
+                "time": 485,
+                "price": 515
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "พะเยา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 625,
+                "time": 577,
+                "price": 576
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "เพชรบูรณ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 296,
+                "time": 273,
+                "price": 407
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "พิจิตร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 271,
+                "time": 220,
+                "price": 299
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "พิษณุโลก",
+            "transport": "บขส",
+            "weights": {
+                "distance": 317,
+                "time": 251,
+                "price": 320
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "แพร่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 500,
+                "time": 462,
+                "price": 468
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ปราจีนบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 141,
+                "time": 130,
+                "price": 558
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ร้อยเอ็ด",
+            "transport": "บขส",
+            "weights": {
+                "distance": 457,
+                "time": 422,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "สกลนคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 597,
+                "time": 551,
+                "price": 558
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "สิงห์บุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 77.8,
+                "time": 70,
+                "price": 135
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ศรีสะเกษ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 499,
+                "time": 408,
+                "price": 418
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "สุโขทัย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 354,
+                "time": 327,
+                "price": 378
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "สุรินทร์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 385,
+                "time": 318,
+                "price": 367
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ตาก",
+            "transport": "บขส",
+            "weights": {
+                "distance": 386,
+                "time": 295,
+                "price": 362
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "อุตรดิตถ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 422,
+                "time": 333,
+                "price": 405
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "พระนครศรีอยุธยา",
+            "destination": "ยโสธร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 481,
+                "time": 444,
+                "price": 457
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 40.8,
+                "time": 38,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "อุดรธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 565,
+                "time": 496,
+                "price": 473
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ขอนแก่น",
+            "transport": "บขส",
+            "weights": {
+                "distance": 419,
+                "time": 387,
+                "price": 433
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "นครราชสีมา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 323,
+                "time": 255,
+                "price": 227
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "อุบลราชธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 650,
+                "time": 548,
+                "price": 524
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "เชียงใหม่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 654,
+                "time": 489,
+                "price": 693
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 138,
+                "time": 110,
+                "price": 160
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "สมุทรปราการ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 63,
+                "time": 57,
+                "price": 80
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "สระบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 80.2,
+                "time": 74,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "พระนครศรีอยุธยา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 53.3,
+                "time": 49,
+                "price": 88
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "สมุทรสาคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 77.6,
+                "time": 71,
+                "price": 80
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ระยอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 196,
+                "time": 181,
+                "price": 269
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "อำนาจเจริญ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 588,
+                "time": 491,
+                "price": 486
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "อ่างทอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 97.7,
+                "time": 90,
+                "price": 128
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "บึงกาฬ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 735,
+                "time": 678,
+                "price": 565
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "บุรีรัมย์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 359,
+                "time": 287,
+                "price": 333
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ชัยนาท",
+            "transport": "บขส",
+            "weights": {
+                "distance": 171,
+                "time": 158,
+                "price": 571
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ชัยภูมิ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 336,
+                "time": 310,
+                "price": 261
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "จันทบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 263,
+                "time": 243,
+                "price": 363
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "เชียงราย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 824,
+                "time": 671,
+                "price": 758
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "กาฬสินธุ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 490,
+                "time": 452,
+                "price": 508
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "กำแพงเพชร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 333,
+                "time": 307,
+                "price": 313
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ลำปาง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 579,
+                "time": 534,
+                "price": 522
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ลำพูน",
+            "transport": "บขส",
+            "weights": {
+                "distance": 583,
+                "time": 538,
+                "price": 594
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "เลย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 512,
+                "time": 473,
+                "price": 550
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ลพบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 147,
+                "time": 136,
+                "price": 156
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "มหาสารคาม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 378,
+                "time": 301,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "มุกดาหาร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 629,
+                "time": 581,
+                "price": 558
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "นครพนม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 716,
+                "time": 661,
+                "price": 576
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "นครสวรรค์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 274,
+                "time": 253,
+                "price": 216
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "น่าน",
+            "transport": "บขส",
+            "weights": {
+                "distance": 640,
+                "time": 495,
+                "price": 661
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "หนองบัวลำภู",
+            "transport": "บขส",
+            "weights": {
+                "distance": 522,
+                "time": 441,
+                "price": 527
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "หนองคาย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 624,
+                "time": 554,
+                "price": 515
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "พะเยา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 693,
+                "time": 545,
+                "price": 691
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "เพชรบูรณ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 323,
+                "time": 298,
+                "price": 380
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "พิจิตร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 298,
+                "time": 275,
+                "price": 333
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "พิษณุโลก",
+            "transport": "บขส",
+            "weights": {
+                "distance": 356,
+                "time": 329,
+                "price": 320
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "แพร่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 525,
+                "time": 397,
+                "price": 468
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ปราจีนบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 124,
+                "time": 114,
+                "price": 558
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ร้อยเอ็ด",
+            "transport": "บขส",
+            "weights": {
+                "distance": 432,
+                "time": 356,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "สกลนคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 620,
+                "time": 572,
+                "price": 558
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "สิงห์บุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 129,
+                "time": 119,
+                "price": 135
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ศรีสะเกษ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 500,
+                "time": 462,
+                "price": 418
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "สุโขทัย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 405,
+                "time": 374,
+                "price": 376
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "สุรินทร์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 448,
+                "time": 414,
+                "price": 367
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ตาก",
+            "transport": "บขส",
+            "weights": {
+                "distance": 411,
+                "time": 379,
+                "price": 362
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ตราด",
+            "transport": "บขส",
+            "weights": {
+                "distance": 338,
+                "time": 312,
+                "price": 435
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "อุตรดิตถ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 501,
+                "time": 462,
+                "price": 473
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "ปทุมธานี",
+            "destination": "ยโสธร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 520,
+                "time": 427,
+                "price": 460
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "นครปฐม",
+            "destination": "กาญจนบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 68.9,
+                "time": 64,
+                "price": 90
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "นครปฐม",
+            "destination": "เชียงใหม่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 696,
+                "time": 642,
+                "price": 733
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "นครปฐม",
+            "destination": "ลำปาง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 610,
+                "time": 563,
+                "price": 733
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรสาคร",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 44.8,
+                "time": 41,
+                "price": 60
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรสาคร",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 246,
+                "time": 199,
+                "price": 220
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรสาคร",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 599,
+                "time": 492,
+                "price": 899
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรสาคร",
+            "destination": "พังงา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 729,
+                "time": 601,
+                "price": 899
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรสาคร",
+            "destination": "กระบี่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 740,
+                "time": 601,
+                "price": 899
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรสาคร",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 416,
+                "time": 335,
+                "price": 400
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรสาคร",
+            "destination": "ภูเก็ต",
+            "transport": "บขส",
+            "weights": {
+                "distance": 800,
+                "time": 678,
+                "price": 1112
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "นครราชสีมา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 279,
+                "time": 218,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "อุบลราชธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 589,
+                "time": 540,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "สระบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 131,
+                "time": 103,
+                "price": 517
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 109,
+                "time": 93,
+                "price": 153
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "พระนครศรีอยุธยา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 104,
+                "time": 85,
+                "price": 517
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ระยอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 164,
+                "time": 150,
+                "price": 151
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ปทุมธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 61.2,
+                "time": 53,
+                "price": 517
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 293,
+                "time": 243,
+                "price": 423
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 645,
+                "time": 600,
+                "price": 966
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "พังงา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 765,
+                "time": 710,
+                "price": 966
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 30.5,
+                "time": 30,
+                "price": 50
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "จันทบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 233,
+                "time": 215,
+                "price": 218
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 461,
+                "time": 425,
+                "price": 588
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ภูเก็ต",
+            "transport": "บขส",
+            "weights": {
+                "distance": 845,
+                "time": 780,
+                "price": 966
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ตราด",
+            "transport": "บขส",
+            "weights": {
+                "distance": 308,
+                "time": 285,
+                "price": 279
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ยโสธร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 605,
+                "time": 560,
+                "price": 420
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "สงขลา",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 751,
+                "time": 90,
+                "price": 1765
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "กระบี่",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 650,
+                "time": 85,
+                "price": 1635
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "นครศรีธรรมราช",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 578,
+                "time": 70,
+                "price": 1940
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ภูเก็ต",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 674,
+                "time": 95,
+                "price": 1715
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 535,
+                "time": 75,
+                "price": 1440
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "อุบลราชธานี",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 477,
+                "time": 75,
+                "price": 1515
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ขอนแก่น",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 379,
+                "time": 65,
+                "price": 1365
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "อุดรธานี",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 466,
+                "time": 75,
+                "price": 1665
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "เชียงใหม่",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 597,
+                "time": 85,
+                "price": 1500
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "เชียงราย",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 703,
+                "time": 85,
+                "price": 1760
+            }
+        },
+        {
+            "zone": "กลาง",
+            "source": "สมุทรปราการ",
+            "destination": "ตราด",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 231,
+                "time": 60,
+                "price": 1720
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 501,
+                "time": 240,
+                "price": 256
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "นครราชสีมา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 454,
+                "time": 354,
+                "price": 355
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 398,
+                "time": 300,
+                "price": 628
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "สมุทรปราการ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 299,
+                "time": 240,
+                "price": 397
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "สมุทรสาคร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 249,
+                "time": 197,
+                "price": 400
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "ระยอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 459,
+                "time": 362,
+                "price": 745
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "เพชรบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 151,
+                "time": 139,
+                "price": 169
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "สุราษฎร์ธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 363,
+                "time": 280,
+                "price": 899
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "พังงา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 475,
+                "time": 417,
+                "price": 899
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "กระบี่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 498,
+                "time": 430,
+                "price": 899
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 398,
+                "time": 300,
+                "price": 592
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 161.62,
+                "time": 200,
+                "price": 625
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "ลำปาง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 881,
+                "time": 695,
+                "price": 1000
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "นครศรีธรรมราช",
+            "transport": "บขส",
+            "weights": {
+                "distance": 454,
+                "time": 320,
+                "price": 652
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "ภูเก็ต",
+            "transport": "บขส",
+            "weights": {
+                "distance": 555,
+                "time": 510,
+                "price": 1316
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "สมุทรสงคราม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 207,
+                "time": 170,
+                "price": 205
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "ยะลา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 790,
+                "time": 780,
+                "price": 995
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "ปัตตานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 769,
+                "time": 660,
+                "price": 970
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "ระนอง",
+            "transport": "บขส",
+            "weights": {
+                "distance": 290,
+                "time": 250,
+                "price": 549
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "ประจวบคีรีขันธ์",
+            "destination": "เชียงใหม่",
+            "transport": "เครื่องบิน",
+            "weights": {
+                "distance": 690,
+                "time": 75,
+                "price": 3890
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "เพชรบุรี",
+            "destination": "ประจวบคีรีขันธ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 153,
+                "time": 142,
+                "price": 400
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "เพชรบุรี",
+            "destination": "อำนาจเจริญ",
+            "transport": "บขส",
+            "weights": {
+                "distance": 733,
+                "time": 810,
+                "price": 763
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "เพชรบุรี",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 171,
+                "time": 165,
+                "price": 169
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "เพชรบุรี",
+            "destination": "ชุมพร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 322,
+                "time": 243,
+                "price": 467
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "เพชรบุรี",
+            "destination": "กาฬสินธุ์",
+            "transport": "บขส",
+            "weights": {
+                "distance": 645,
+                "time": 825,
+                "price": 800
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "เพชรบุรี",
+            "destination": "มุกดาหาร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 750,
+                "time": 875,
+                "price": 800
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "เพชรบุรี",
+            "destination": "ร้อยเอ็ด",
+            "transport": "บขส",
+            "weights": {
+                "distance": 634,
+                "time": 770,
+                "price": 763
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "เพชรบุรี",
+            "destination": "ยโสธร",
+            "transport": "บขส",
+            "weights": {
+                "distance": 721,
+                "time": 850,
+                "price": 800
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "กาญจนบุรี",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 133,
+                "time": 120,
+                "price": 240
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "กาญจนบุรี",
+            "destination": "เชียงใหม่",
+            "transport": "บขส",
+            "weights": {
+                "distance": 684,
+                "time": 710,
+                "price": 778
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "กาญจนบุรี",
+            "destination": "หนองคาย",
+            "transport": "บขส",
+            "weights": {
+                "distance": 713,
+                "time": 720,
+                "price": 666
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "กาญจนบุรี",
+            "destination": "อุดรธานี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 683,
+                "time": 600,
+                "price": 860
+            }
+        },
+        {
+            "zone": "ตะวันตก",
+            "source": "กาญจนบุรี",
+            "destination": "นครราชสีมา",
+            "transport": "บขส",
+            "weights": {
+                "distance": 350,
+                "time": 420,
+                "price": 600
+            }
+        }
+    ]
+}
