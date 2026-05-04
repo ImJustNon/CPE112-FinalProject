@@ -4522,6 +4522,61 @@
                 "time": 420,
                 "price": 600
             }
+        },
+        {
+            "zone": "ตะวันออก",
+            "source": "ฉะเชิงเทรา",
+            "destination": "กทม",
+            "transport": "บขส",
+            "weights": {
+                "distance": 150,
+                "time": 90,
+                "price": 170
+            }
+        },
+        {
+            "zone": "ตะวันออก",
+            "source": "ฉะเชิงเทรา",
+            "destination": "สระบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 162,
+                "time": 150,
+                "price": 190
+            }
+        },
+        {
+            "zone": "ตะวันออก",
+            "source": "ฉะเชิงเทรา",
+            "destination": "ชลบุรี",
+            "transport": "บขส",
+            "weights": {
+                "distance": 76.8,
+                "time": 60,
+                "price": 170
+            }
+        },
+        {
+            "zone": "ตะวันออก",
+            "source": "ฉะเชิงเทรา",
+            "destination": "สระแก้ว",
+            "transport": "บขส",
+            "weights": {
+                "distance": 109,
+                "time": 210,
+                "price": 126
+            }
+        },
+        {
+            "zone": "ตะวันออก",
+            "source": "ฉะเชิงเทรา",
+            "destination": "ขอนแก่น",
+            "transport": "บขส",
+            "weights": {
+                "distance": 450,
+                "time": 420,
+                "price": 427
+            }
         }
     ]
 }
