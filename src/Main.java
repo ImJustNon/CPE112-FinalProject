@@ -5,9 +5,40 @@ import model.PathResult;
 import parser.GraphParser;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
+    private static final Map<String, String> PROVINCE_CODES = new HashMap<>();
+    private static final Map<String, String> CODE_TO_PROVINCE = new HashMap<>();
+
+    static {
+        String[][] codes = {
+            {"กทม", "BKK"}, {"กระบี่", "KBI"}, {"กาญจนบุรี", "KAN"}, {"กาฬสินธุ์", "KAL"}, {"กำแพงเพชร", "KPT"}, 
+            {"ขอนแก่น", "KKC"}, {"จันทบุรี", "CTI"}, {"ฉะเชิงเทรา", "CCO"}, {"ชลบุรี", "CHB"}, {"ชัยนาท", "CNT"}, 
+            {"ชัยภูมิ", "CPM"}, {"ชุมพร", "CJM"}, {"เชียงราย", "CEI"}, {"เชียงใหม่", "CNX"}, {"ตรัง", "TST"}, 
+            {"ตราด", "TDX"}, {"ตาก", "TAK"}, {"นครนายก", "NYK"}, {"นครปฐม", "NPT"}, {"นครพนม", "KOP"}, 
+            {"นครราชสีมา", "NAK"}, {"นครศรีธรรมราช", "NST"}, {"นครสวรรค์", "NWN"}, {"นนทบุรี", "NBI"}, 
+            {"นราธิวาส", "NAW"}, {"น่าน", "NNT"}, {"บึงกาฬ", "BKN"}, {"บุรีรัมย์", "BFV"}, {"ปทุมธานี", "PTE"}, 
+            {"ประจวบคีรีขันธ์", "PKN"}, {"ปราจีนบุรี", "PRI"}, {"ปัตตานี", "PTN"}, {"พระนครศรีอยุธยา", "AYA"}, 
+            {"พะเยา", "PYO"}, {"พังงา", "PNA"}, {"พัทลุง", "PLG"}, {"พิจิตร", "PCT"}, {"พิษณุโลก", "PHS"}, 
+            {"เพชรบุรี", "PBI"}, {"เพชรบูรณ์", "PHY"}, {"แพร่", "PRH"}, {"ภูเก็ต", "HKT"}, {"มหาสารคาม", "MKM"}, 
+            {"มุกดาหาร", "MDH"}, {"แม่ฮ่องสอน", "HGN"}, {"ยโสธร", "YST"}, {"ยะลา", "YLA"}, {"ร้อยเอ็ด", "ROI"}, 
+            {"ระนอง", "UNN"}, {"ระยอง", "RYG"}, {"ราชบุรี", "RBR"}, {"ลพบุรี", "LRI"}, {"ลำปาง", "LPT"}, 
+            {"ลำพูน", "LPN"}, {"เลย", "LOE"}, {"ศรีสะเกษ", "SSK"}, {"สกลนคร", "SNO"}, {"สงขลา", "SGZ"}, 
+            {"สตูล", "SAT"}, {"สมุทรปราการ", "SPK"}, {"สมุทรสงคราม", "SKM"}, {"สมุทรสาคร", "SKN"}, 
+            {"สระแก้ว", "SKW"}, {"สระบุรี", "SRI"}, {"สิงห์บุรี", "SBR"}, {"สุโขทัย", "THS"}, 
+            {"สุพรรณบุรี", "SPB"}, {"สุราษฎร์ธานี", "URT"}, {"สุรินทร์", "SRN"}, {"หนองคาย", "NKI"}, 
+            {"หนองบัวลำภู", "NBP"}, {"อ่างทอง", "ATG"}, {"อำนาจเจริญ", "ACR"}, {"อุดรธานี", "UTH"}, 
+            {"อุตรดิตถ์", "UTD"}, {"อุทัยธานี", "UTI"}, {"อุบลราชธานี", "UBP"}
+        };
+        for (String[] pair : codes) {
+            PROVINCE_CODES.put(pair[0], pair[1]);
+            CODE_TO_PROVINCE.put(pair[1].toUpperCase(), pair[0]);
+        }
+    }
+
     public static void main(String[] args) {
         String jsonFile = "data/weight_data.json";
         if (!new File(jsonFile).exists()) {
@@ -43,17 +74,40 @@ public class Main {
             return;
         }
 
-        System.out.print("Enter source province: ");
-        String source = scanner.nextLine().trim();
-        if (!graph.getVertices().contains(source)) {
-            System.out.println("Error: '" + source + "' is not a valid location in the data.");
+        java.util.Set<String> validSources = new java.util.TreeSet<>();
+        java.util.Set<String> validDestinations = new java.util.TreeSet<>();
+        for (String v : graph.getVertices()) {
+            if (!graph.getNeighbors(v).isEmpty()) validSources.add(v);
+            for (Edge e : graph.getNeighbors(v)) validDestinations.add(e.getDestination());
+        }
+
+        System.out.println("\nAvailable source province(s):");
+        java.util.List<String> sourceDisplayList = new java.util.ArrayList<>();
+        for (String s : validSources) {
+            String code = PROVINCE_CODES.getOrDefault(s, "N/A");
+            sourceDisplayList.add(s + "(" + code + ")");
+        }
+        System.out.println(String.join(", ", sourceDisplayList));
+        System.out.print("Enter source province (Name or Code): ");
+        String sourceInput = scanner.nextLine().trim();
+        String source = CODE_TO_PROVINCE.getOrDefault(sourceInput.toUpperCase(), sourceInput);
+        if (!validSources.contains(source)) {
+            System.out.println("Error: '" + sourceInput + "' is not a valid source location in the data.");
             return;
         }
 
-        System.out.print("Enter destination province: ");
-        String destination = scanner.nextLine().trim();
-        if (!graph.getVertices().contains(destination)) {
-            System.out.println("Error: '" + destination + "' is not a valid location in the data.");
+        System.out.println("\nAvailable destination province(s):");
+        java.util.List<String> destDisplayList = new java.util.ArrayList<>();
+        for (String d : validDestinations) {
+            String code = PROVINCE_CODES.getOrDefault(d, "N/A");
+            destDisplayList.add(d + " (" + code + ")");
+        }
+        System.out.println(String.join(", ", destDisplayList));
+        System.out.print("Enter destination province (Name or Code): ");
+        String destInput = scanner.nextLine().trim();
+        String destination = CODE_TO_PROVINCE.getOrDefault(destInput.toUpperCase(), destInput);
+        if (!validDestinations.contains(destination)) {
+            System.out.println("Error: '" + destInput + "' is not a valid destination location in the data.");
             return;
         }
 
