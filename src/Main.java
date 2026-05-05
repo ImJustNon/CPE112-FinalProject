@@ -85,7 +85,7 @@ public class Main {
         java.util.List<String> sourceDisplayList = new java.util.ArrayList<>();
         for (String s : validSources) {
             String code = PROVINCE_CODES.getOrDefault(s, "N/A");
-            sourceDisplayList.add(s + "(" + code + ")");
+            sourceDisplayList.add(s + " (" + code + ")");
         }
         System.out.println(String.join(", ", sourceDisplayList));
         System.out.print("Enter source province (Name or Code): ");
