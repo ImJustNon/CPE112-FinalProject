@@ -87,8 +87,13 @@ public class Main {
             String code = PROVINCE_CODES.getOrDefault(s, "N/A");
             sourceDisplayList.add(s + " (" + code + ")");
         }
-        System.out.println(String.join(", ", sourceDisplayList));
-        System.out.print("Enter source province (Name or Code): ");
+        for (int i = 0; i < sourceDisplayList.size(); i++) {
+            System.out.printf("%-32s", sourceDisplayList.get(i));
+            if ((i + 1) % 3 == 0) System.out.println();
+        }
+        if (sourceDisplayList.size() % 3 != 0) System.out.println();
+        
+        System.out.print("\nEnter source province (Name or Code): ");
         String sourceInput = scanner.nextLine().trim();
         String source = CODE_TO_PROVINCE.getOrDefault(sourceInput.toUpperCase(), sourceInput);
         if (!validSources.contains(source)) {
@@ -102,8 +107,13 @@ public class Main {
             String code = PROVINCE_CODES.getOrDefault(d, "N/A");
             destDisplayList.add(d + " (" + code + ")");
         }
-        System.out.println(String.join(", ", destDisplayList));
-        System.out.print("Enter destination province (Name or Code): ");
+        for (int i = 0; i < destDisplayList.size(); i++) {
+            System.out.printf("%-32s", destDisplayList.get(i));
+            if ((i + 1) % 3 == 0) System.out.println();
+        }
+        if (destDisplayList.size() % 3 != 0) System.out.println();
+        
+        System.out.print("\nEnter destination province (Name or Code): ");
         String destInput = scanner.nextLine().trim();
         String destination = CODE_TO_PROVINCE.getOrDefault(destInput.toUpperCase(), destInput);
         if (!validDestinations.contains(destination)) {
