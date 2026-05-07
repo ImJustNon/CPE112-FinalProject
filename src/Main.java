@@ -40,9 +40,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String jsonFile = "data/weight_data.json";
+        String jsonFile = "src/weight/travel_weight.json";
         if (!new File(jsonFile).exists()) {
-            jsonFile = "weight_data.json";
+            jsonFile = "travel_weight.json";
             if (!new File(jsonFile).exists()) {
                 System.out.println("Could not find JSON data file.");
                 return;
