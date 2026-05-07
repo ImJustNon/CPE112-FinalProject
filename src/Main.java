@@ -71,6 +71,7 @@ public class Main {
 
         if (!useDist && !useTime && !usePrice) {
             System.out.println("Invalid choice. Exiting.");
+            scanner.close();
             return;
         }
 
@@ -98,6 +99,7 @@ public class Main {
         String source = CODE_TO_PROVINCE.getOrDefault(sourceInput.toUpperCase(), sourceInput);
         if (!validSources.contains(source)) {
             System.out.println("Error: '" + sourceInput + "' is not a valid source location in the data.");
+            scanner.close();
             return;
         }
 
@@ -118,6 +120,7 @@ public class Main {
         String destination = CODE_TO_PROVINCE.getOrDefault(destInput.toUpperCase(), destInput);
         if (!validDestinations.contains(destination)) {
             System.out.println("Error: '" + destInput + "' is not a valid destination location in the data.");
+            scanner.close();
             return;
         }
 
@@ -127,6 +130,7 @@ public class Main {
 
             if (result == null) {
                 System.out.println("\nNo path found between '" + source + "' and '" + destination + "'.");
+                scanner.close();
                 return;
             }
 
