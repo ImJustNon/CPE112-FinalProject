@@ -20,7 +20,7 @@ if [ -z "$JAVA_FILES" ]; then
 fi
 
 echo "Compiling Java files..."
-javac -d "$OUT_DIR" -sourcepath "$SRC_DIR" $JAVA_FILES
+javac -d "$OUT_DIR" -sourcepath "$SRC_DIR" -cp "lib/*" $JAVA_FILES
 
 if [ $? -ne 0 ]; then
     echo "Compilation failed!"
