@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Main {
     private static final Map<String, String> PROVINCE_CODES = new HashMap<>();
     private static final Map<String, String> CODE_TO_PROVINCE = new HashMap<>();
+    private static final Map<String, String> PROVINCE_TO_REGION = new HashMap<>();
 
     static {
         String[][] codes = {
@@ -37,6 +38,20 @@ public class Main {
             PROVINCE_CODES.put(pair[0], pair[1]);
             CODE_TO_PROVINCE.put(pair[1].toUpperCase(), pair[0]);
         }
+
+        // Region categorization
+        String[] north = {"เชียงราย", "เชียงใหม่", "น่าน", "พะเยา", "แพร่", "แม่ฮ่องสอน", "ลำปาง", "ลำพูน", "อุตรดิตถ์"};
+        String[] northEast = {"กาฬสินธุ์", "ขอนแก่น", "ชัยภูมิ", "นครพนม", "นครราชสีมา", "บึงกาฬ", "บุรีรัมย์", "มหาสารคาม", "มุกดาหาร", "ยโสธร", "ร้อยเอ็ด", "เลย", "ศรีสะเกษ", "สกลนคร", "สุรินทร์", "หนองคาย", "หนองบัวลำภู", "อำนาจเจริญ", "อุดรธานี", "อุบลราชธานี"};
+        String[] west = {"กาญจนบุรี", "ตาก", "ประจวบคีรีขันธ์", "เพชรบุรี", "ราชบุรี"};
+        String[] east = {"จันทบุรี", "ฉะเชิงเทรา", "ชลบุรี", "ตราด", "ปราจีนบุรี", "ระยอง", "สระแก้ว"};
+        String[] south = {"กระบี่", "ชุมพร", "ตรัง", "นครศรีธรรมราช", "นราธิวาส", "ปัตตานี", "พังงา", "พัทลุง", "ภูเก็ต", "ยะลา", "ระนอง", "สงขลา", "สตูล", "สุราษฎร์ธานี"};
+        // Everything else will default to Central ("ภาคกลาง")
+        
+        for (String p : north) PROVINCE_TO_REGION.put(p, "ภาคเหนือ");
+        for (String p : northEast) PROVINCE_TO_REGION.put(p, "ภาคตะวันออกเฉียงเหนือ");
+        for (String p : west) PROVINCE_TO_REGION.put(p, "ภาคตะวันตก");
+        for (String p : east) PROVINCE_TO_REGION.put(p, "ภาคตะวันออก");
+        for (String p : south) PROVINCE_TO_REGION.put(p, "ภาคใต้");
     }
 
     public static void main(String[] args) {
@@ -117,16 +132,71 @@ public class Main {
     }
 
     private static void displayLocations(java.util.Set<String> locations) {
-        java.util.List<String> displayList = new java.util.ArrayList<>();
+        String[] regions = {"ภาคเหนือ", "ภาคตะวันออกเฉียงเหนือ", "ภาคกลาง", "ภาคตะวันออก", "ภาคตะวันตก", "ภาคใต้"};
+        Map<String, java.util.List<String>> byRegion = new java.util.LinkedHashMap<>();
+        for (String r : regions) {
+            byRegion.put(r, new java.util.ArrayList<>());
+        }
+
         for (String loc : locations) {
+            String region = PROVINCE_TO_REGION.getOrDefault(loc, "ภาคกลาง");
             String code = PROVINCE_CODES.getOrDefault(loc, "N/A");
-            displayList.add(loc + " (" + code + ")");
+            byRegion.get(region).add(" " + loc + " (" + code + ")");
         }
-        for (int i = 0; i < displayList.size(); i++) {
-            System.out.printf("%-32s", displayList.get(i));
-            if ((i + 1) % 3 == 0) System.out.println();
+
+        for (String region : regions) {
+            java.util.List<String> list = byRegion.get(region);
+            if (list.isEmpty()) continue;
+
+            System.out.println("┌────────────────────────────────────────────────────────────────────────┐");
+            System.out.println("│ " + padRightCenter(region, 70) + " │");
+            System.out.println("├────────────────────────────────────────────────────────────────────────┤");
+
+            for (int i = 0; i < list.size(); i += 3) {
+                String col1 = list.get(i);
+                String col2 = (i + 1 < list.size()) ? list.get(i + 1) : "";
+                String col3 = (i + 2 < list.size()) ? list.get(i + 2) : "";
+
+                System.out.println("│" + padRightThai(col1, 24) + padRightThai(col2, 24) + padRightThai(col3, 24) + "│");
+            }
+            System.out.println("└────────────────────────────────────────────────────────────────────────┘");
         }
-        if (displayList.size() % 3 != 0) System.out.println();
+    }
+
+    private static int getDisplayLength(String str) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            // Ignore Thai upper/lower combining characters for display width calculation
+            if ((c >= '\u0E31' && c <= '\u0E31') || 
+                (c >= '\u0E34' && c <= '\u0E3A') || 
+                (c >= '\u0E47' && c <= '\u0E4E')) {
+                continue;
+            }
+            count++;
+        }
+        return count;
+    }
+
+    private static String padRightThai(String s, int n) {
+        int pad = n - getDisplayLength(s);
+        if (pad <= 0) return s;
+        StringBuilder sb = new StringBuilder(s);
+        for (int i = 0; i < pad; i++) sb.append(" ");
+        return sb.toString();
+    }
+
+    private static String padRightCenter(String s, int n) {
+        int len = getDisplayLength(s);
+        int pad = n - len;
+        if (pad <= 0) return s;
+        int leftPad = pad / 2;
+        int rightPad = pad - leftPad;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < leftPad; i++) sb.append(" ");
+        sb.append(s);
+        for (int i = 0; i < rightPad; i++) sb.append(" ");
+        return sb.toString();
     }
 
     private static String promptLocation(Scanner scanner, String locationType, java.util.Set<String> validLocations) {
