@@ -40,97 +40,118 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String jsonFile = "src/weight/travel_weight.json";
-        if (!new File(jsonFile).exists()) {
-            jsonFile = "travel_weight.json";
-            if (!new File(jsonFile).exists()) {
-                System.out.println("Could not find JSON data file.");
-                return;
-            }
-        }
-
-        System.out.println("Loading graph data...");
-        Graph graph = GraphParser.loadGraph(jsonFile);
-        
-        System.out.println("Loaded " + graph.getVertices().size() + " vertices.\n");
-
-        System.out.println("=== Route Optimization ===");
-        System.out.println("What do you want to save the most? (Minimize)");
-        System.out.println("You can choose multiple separated by commas (e.g., 1,3 or 1,2,3)");
-        System.out.println("1. Distance (km)");
-        System.out.println("2. Time (minutes)");
-        System.out.println("3. Price (Baht)");
+        Graph graph = initializeGraph();
+        if (graph == null) return;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your choice(s) (1-3): ");
-        String choiceInput = scanner.nextLine().trim();
-
-        boolean useDist = choiceInput.contains("1");
-        boolean useTime = choiceInput.contains("2");
-        boolean usePrice = choiceInput.contains("3");
-
-        if (!useDist && !useTime && !usePrice) {
-            System.out.println("Invalid choice. Exiting.");
+        
+        boolean[] preferences = getOptimizationPreferences(scanner);
+        if (preferences == null) {
             scanner.close();
             return;
         }
 
         java.util.Set<String> validSources = new java.util.TreeSet<>();
         java.util.Set<String> validDestinations = new java.util.TreeSet<>();
+        extractValidLocations(graph, validSources, validDestinations);
+
+        String source = promptLocation(scanner, "source", validSources);
+        if (source == null) {
+            scanner.close();
+            return;
+        }
+
+        String destination = promptLocation(scanner, "destination", validDestinations);
+        if (destination == null) {
+            scanner.close();
+            return;
+        }
+
+        optimizeAndPrintRoute(graph, source, destination, preferences[0], preferences[1], preferences[2]);
+        
+        scanner.close();
+    }
+
+    private static Graph initializeGraph() {
+        String jsonFile = "src/weight/travel_weight.json";
+        if (!new File(jsonFile).exists()) {
+            jsonFile = "travel_weight.json";
+            if (!new File(jsonFile).exists()) {
+                System.out.println("Could not find JSON data file.");
+                return null;
+            }
+        }
+
+        System.out.println("Loading graph data...");
+        Graph graph = GraphParser.loadGraph(jsonFile);
+        System.out.println("Loaded " + graph.getVertices().size() + " vertices.\n");
+        return graph;
+    }
+
+    private static boolean[] getOptimizationPreferences(Scanner scanner) {
+        System.out.println("=== Route Optimization ===");
+        System.out.println("What do you want to save the most? (Minimize)");
+        System.out.println("You can choose multiple separated by commas (e.g., 1,3 or 1,2,3)");
+        System.out.println("1. Distance (km)");
+        System.out.println("2. Time (minutes)");
+        System.out.println("3. Price (Baht)");
+        System.out.print("Enter your choice(s) (1-3): ");
+        
+        String choiceInput = scanner.nextLine().trim();
+        boolean useDist = choiceInput.contains("1");
+        boolean useTime = choiceInput.contains("2");
+        boolean usePrice = choiceInput.contains("3");
+
+        if (!useDist && !useTime && !usePrice) {
+            System.out.println("Invalid choice. Exiting.");
+            return null;
+        }
+        return new boolean[]{useDist, useTime, usePrice};
+    }
+
+    private static void extractValidLocations(Graph graph, java.util.Set<String> validSources, java.util.Set<String> validDestinations) {
         for (String v : graph.getVertices()) {
             if (!graph.getNeighbors(v).isEmpty()) validSources.add(v);
             for (Edge e : graph.getNeighbors(v)) validDestinations.add(e.getDestination());
         }
+    }
 
-        System.out.println("\nAvailable source province(s):");
-        java.util.List<String> sourceDisplayList = new java.util.ArrayList<>();
-        for (String s : validSources) {
-            String code = PROVINCE_CODES.getOrDefault(s, "N/A");
-            sourceDisplayList.add(s + " (" + code + ")");
+    private static void displayLocations(java.util.Set<String> locations) {
+        java.util.List<String> displayList = new java.util.ArrayList<>();
+        for (String loc : locations) {
+            String code = PROVINCE_CODES.getOrDefault(loc, "N/A");
+            displayList.add(loc + " (" + code + ")");
         }
-        for (int i = 0; i < sourceDisplayList.size(); i++) {
-            System.out.printf("%-32s", sourceDisplayList.get(i));
+        for (int i = 0; i < displayList.size(); i++) {
+            System.out.printf("%-32s", displayList.get(i));
             if ((i + 1) % 3 == 0) System.out.println();
         }
-        if (sourceDisplayList.size() % 3 != 0) System.out.println();
-        
-        System.out.print("\nEnter source province (Name or Code): ");
-        String sourceInput = scanner.nextLine().trim();
-        String source = CODE_TO_PROVINCE.getOrDefault(sourceInput.toUpperCase(), sourceInput);
-        if (!validSources.contains(source)) {
-            System.out.println("Error: '" + sourceInput + "' is not a valid source location in the data.");
-            scanner.close();
-            return;
-        }
+        if (displayList.size() % 3 != 0) System.out.println();
+    }
 
-        System.out.println("\nAvailable destination province(s):");
-        java.util.List<String> destDisplayList = new java.util.ArrayList<>();
-        for (String d : validDestinations) {
-            String code = PROVINCE_CODES.getOrDefault(d, "N/A");
-            destDisplayList.add(d + " (" + code + ")");
-        }
-        for (int i = 0; i < destDisplayList.size(); i++) {
-            System.out.printf("%-32s", destDisplayList.get(i));
-            if ((i + 1) % 3 == 0) System.out.println();
-        }
-        if (destDisplayList.size() % 3 != 0) System.out.println();
+    private static String promptLocation(Scanner scanner, String locationType, java.util.Set<String> validLocations) {
+        System.out.println("\nAvailable " + locationType + " province(s):");
+        displayLocations(validLocations);
         
-        System.out.print("\nEnter destination province (Name or Code): ");
-        String destInput = scanner.nextLine().trim();
-        String destination = CODE_TO_PROVINCE.getOrDefault(destInput.toUpperCase(), destInput);
-        if (!validDestinations.contains(destination)) {
-            System.out.println("Error: '" + destInput + "' is not a valid destination location in the data.");
-            scanner.close();
-            return;
+        System.out.print("\nEnter " + locationType + " province (Name or Code): ");
+        String input = scanner.nextLine().trim();
+        String location = CODE_TO_PROVINCE.getOrDefault(input.toUpperCase(), input);
+        
+        if (!validLocations.contains(location)) {
+            System.out.println("Error: '" + input + "' is not a valid " + locationType + " location in the data.");
+            return null;
         }
+        return location;
+    }
 
+    private static void optimizeAndPrintRoute(Graph graph, String source, String destination, 
+                                              boolean useDist, boolean useTime, boolean usePrice) {
         try {
             DijkstraOptimizer optimizer = new DijkstraOptimizer();
             PathResult result = optimizer.findShortestPath(graph, source, destination, useDist, useTime, usePrice);
 
             if (result == null) {
                 System.out.println("\nNo path found between '" + source + "' and '" + destination + "'.");
-                scanner.close();
                 return;
             }
 
@@ -162,7 +183,5 @@ public class Main {
             System.out.println("\nAn error occurred: " + e.getMessage());
             e.printStackTrace();
         }
-        
-        scanner.close();
     }
 }
