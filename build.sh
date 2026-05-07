@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export CLASSPATH="lib/*:."
 SRC_DIR="src"
 OUT_DIR="build/classes"
 JAR_DIR="build"
@@ -20,7 +21,7 @@ if [ -z "$JAVA_FILES" ]; then
 fi
 
 echo "Compiling Java files..."
-javac -d "$OUT_DIR" -sourcepath "$SRC_DIR" $JAVA_FILES
+javac -cp "lib/*" -d "$OUT_DIR" -sourcepath "$SRC_DIR" $JAVA_FILES
 
 if [ $? -ne 0 ]; then
     echo "Compilation failed!"
@@ -29,6 +30,7 @@ fi
 
 MANIFEST_FILE="$JAR_DIR/Manifest.txt"
 echo "Main-Class: $MAIN_CLASS" > "$MANIFEST_FILE"
+echo "Class-Path: ../lib/jackson-core-2.15.2.jar ../lib/jackson-annotations-2.15.2.jar ../lib/jackson-databind-2.15.2.jar" >> "$MANIFEST_FILE"
 
 echo "Creating JAR file..."
 jar cfm "$JAR_DIR/$JAR_NAME" "$MANIFEST_FILE" -C "$OUT_DIR" .
